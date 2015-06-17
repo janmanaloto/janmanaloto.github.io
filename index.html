@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jan - Full Stack Developer</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<style type="text/css">
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+		    margin:0;
+		    padding:0;
+		}
+		html,body {
+		    margin:0;
+		    padding:0;
+		    font-family: 'Lato', sans-serif;
+
+		}
+		#nav {
+			padding: 20px 100px 20px 100px;
+			position: fixed;
+			width: 100%;
+			z-index: 999;
+		}
+		.navalt {
+			background-color: black;
+		}
+		#nav ul li{ 
+			list-style: none;
+			float: right;
+			padding-top: 10px;
+			margin-left: 20px;
+			color: white;
+			font-size: 16px;
+			letter-spacing: 5px;
+		}
+		#header {
+			text-align: center;
+			color: white;
+			background-color: #3399cc;
+			background-image: url("bg.jpg");
+			background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    background-position: center top; 
+			height: 100vh;
+			width: 100%;
+			font-family: 'Lato', sans-serif;
+		}
+		.splash {
+			text-align: center;
+			height: 100vh;
+			width: 100%;
+			display: table;
+		}
+		.splash .slogan{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			font-size: 30px;
+		}
+		.splash .small{
+			font-weight: 100 !important;
+			font-size: 72px;
+			color: white;
+		}
+		.splash .slogan h1 {
+			font-size: 72px;
+			font-weight: 900;
+		}
+		#header #buttons {
+			height: 279px;
+			text-align:center;
+			margin-top:-278.993px; 
+			background-image: url('buttons.png');
+			background-repeat: no-repeat;
+		    background-position: center top; 
+		}
+		#about, #languages, #contact {
+			height: 100vh;
+			width: 100%;
+			text-align: center;
+			font-family: 'Lato', sans-serif;
+			color: black !important;
+			border-top: 1px #DDDDDD solid;
+		}
+		.message {
+			font-weight: 300;
+			font-size: 19px;
+			display: block;
+			padding: 20px;
+		}
+		.lbtn {
+			width:100px; 
+			height:100px;
+			line-height:100px;
+			font-size: 21px;
+			margin: 5px;
+			color: white;
+			display: inline-block;
+			visibility: hidden;
+		}
+		#contact {
+			color: white !important;
+		}
+		.content {
+			color: #777;
+			font-weight: 100;
+			font-size: 20px;
+		}
+		.content h1 {
+			font-weight: 300;
+			font-size: 48px;
+		}
+		/* columns of same height styles */
+.row-same-height {
+    display: table;
+    width: 100%;
+}
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+
+@media (min-width: 768px) {
+    .col-sm-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+/* firefox fix */
+.img-responsive {
+    width: 100%;
+}
+.port {
+	border-top: 1px #DDDDDD solid;
+	padding: 100px;
+}
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+	</style>
+</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<a href="#about"><li>ABOUT ME</li></a>
+				<a href="#languages"><li>PORTFOLIO</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
+			</ul>
+			<a href="#header"><img src="logo.png"/></a>
+		</div>
+		<!-- HEADER -->
+		<div id="header">
+			<div class="splash">
+				<div class="slogan">
+					<h1>JAN <span class="small">MANALOTO</span></h1>
+					<div class="title">&lt;/COMPUTER ENGINEER&gt;</div>
+				</div>
+			</div>
+			<div id="buttons">
+				<a href="#fullstack" ><img class="btn-m" src="btn-dev.png" data-value="Front & Back End" style="margin-left:10px" /></a>
+				<a href="#mobile"><img class="btn-m" src="btn-mobile.png" data-value="Mobile" style="margin-top:-70px;margin-left:21px" /></a>
+				<a href="#about"><img class="btn-m" src="btn-more.png" data-value="MORE" style="margin-top:40px;margin-left:21px" /></a>
+				<a href="#design"><img class="btn-m" src="btn-design.png" style="margin-top:-105px;margin-left:21px" /></a>
+				<a href="#electronics"><img class="btn-m" src="btn-elec.png" data-value="Electronics" data-value="Design" style="margin-top:95px;margin-left:5px" /></a>
+			</div>
+		</div>
+		<!-- END HEADER -->
+		<div id="about">
+			<div class="splash">
+				<div class="slogan container">
+					<h1>hi! <span class="small" style="color:black">Let me introduce myself.</span></h1>
+					<span class="message">I'm Jan Romeo Manaloto, a Computer Engineer. I have been designing websites for small businesses, friends, and groups ever since I was 14 years old.<br>
+					Because I was so passionate about creating software I have since then studied and made systems using PHP, Java, jQuery, and node.js.<br>
+					I also incorporate these languages with Wiring & WiringX to make more intuitive electronic projects and prototypes.</span>
+					<a href="#languages"><img src="btn-more.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div id="languages">
+			<div class="splash">
+				<div class="slogan container">
+					<h1>languages <span class="small" style="color:black">I use.</span></h1>
+					<span class="message container">Aside from English, Tagalog, and a little bit of Kapampangan, I also use the languages below.
+					For front-end development, I use HTML5, CSS3, jQuery, Bootstrap, and at times, Angularjs. For systems development, Java, JavaFX, PHP, and node.js are what I like to use, paired with MySQL as the database (sometimes I use MongoDB or SQLite).<br>
+					Wiring or WiringX are used with my electronic projects, using Arduino or Raspberry pi boards. I usually fuse these projects with node.js, java, html etc., because I like accessing everything via web. I also studied Verilog programming, which is used for Integrated Circuits design.
+					</span>
+					<div class="img-circle lbtn" style="background-color:#d35400;">HTML</div>
+					<div class="img-circle lbtn" style="background-color:#2980b9">CSS</div>
+					<div class="img-circle lbtn" style="background-color:#f1c40f">JS</div>
+					<div class="img-circle lbtn" style="background-color:#2ecc71">PHP</div>
+					<div class="img-circle lbtn" style="background-color:#3498db">node.js</div>
+					<div class="img-circle lbtn" style="background-color:#e74c3c">JAVAFX</div>
+					<div class="img-circle lbtn" style="background-color:#34495e">WIRINGX</div>
+					<div class="img-circle lbtn" style="background-color:#7f8c8d">AS3</div>
+					<div class="img-circle lbtn" style="background-color:#2980b9">MySQL</div>
+					<div class="img-circle lbtn" style="background-color:#95a5a6">Verilog</div>
+				</div>
+			</div>
+		</div>
+		<!-- FRONT AND BACK -->
+		<div class="container port" id="fullstack">
+			<div class="row-same-height" style="vertical-align: middle">
+				<div class="col-lg-6 col-lg-height">
+					<img src="port1.png" class="img-responsive">
+				</div>
+				<div class="content col-lg-6 col-lg-height col-middle">
+					<h1>Full Stack!</h1>
+					I work on both the Frontend and the Backend. PSD conversion to HTML, javascript development, systems development, database design, even server setup.
+				</div>
+			</div>
+		</div>
+		<div class="container port" id="mobile">
+			<div class="content col-lg-9 col-lg-height col-middle" style="text-align: center">
+				<h1>Mobile Development</h1>
+				Creating native android apps using java and developing webservices for communication 
+				between a server and the app.
+			</div>
+			<div class="col-lg-3 col-lg-height">
+				<img src="mobile.jpg" class="img-responsive">
+			</div>
+		</div>
+		<div class="container port" id="design" style="padding-bottom: 0 !important">
+			<div class="col-lg-6 col-lg-height" >
+				<img src="port3.png" class="img-responsive">
+			</div>
+			<div class="content col-lg-6 col-lg-height col-middle">
+				<h1>Design</h1>
+				I design logos, banners, and shirts for groups, business, events, etc.
+			</div>
+		</div>
+		<div class="container port" id="electronics" style="padding-bottom: 0 !important; padding-top: 150px !important">
+		<div class="content col-lg-12" style="text-align: center">
+				<h1>Electronics</h1>
+				Prototyping and development of modules, robots, and systems using arduino, radxa, and coding in
+				wiring and wiringx
+			</div>
+			<div class="col-lg-7 col-lg-offset-5" style="padding-top: 50px">
+				<img src="port4.png" class="img-responsive">
+			</div>
+		</div>
+		<div id="contact" style="background-color: #7f8c8d">
+			<div class="splash container">
+				<div class="slogan">
+					<h1>under construction!</h1>
+					<span class="message">There are still a lot that I want to put here, including an overview of my past projects as well as my contact information.<br>
+					But as of now, this is it. :)
+					</span>
+				</div>
+			</div>
+		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.btn-m').mouseenter(function() {
+			    $(this).effect("pulsate", { times:1 }, 2000);
+			    $(".title").html('&lt;/'+$(this).data('value')+'&gt;').fadeIn("slow");
+			});
+		$('.btn-m').mouseout(function() {
+			$(".title").html('&lt;/COMPUTER ENGINEER&gt;');
+		});
+	});
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	$(window).scroll(function() {
+		if($("#nav").offset().top > 100) {
+			$("#nav").addClass("navalt");
+		}
+		else {
+			$("#nav").removeClass("navalt");
+		}
+		var stat = 0;
+		if (($("#nav").offset().top > ($("#languages").offset().top - 150)) && stat != 1) {
+			var n = 0;
+			for(var i = 3; i < 13; i++) {
+				$(".lbtn:nth-child("+i+")").css('visibility','visible').hide().fadeIn("slow").delay(n);
+				n = n + 300;
+			 }
+			 stat = 1;
+			}
+		else {
+			$(".lbtn").css('visibility','hidden');
+			stat = 0;
+		}
+	}
+	);
+	</script>
+	</body>
+</html>
